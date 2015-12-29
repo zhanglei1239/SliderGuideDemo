@@ -15,6 +15,10 @@
 		04561BD41C3229E500326192 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04561BD21C3229E500326192 /* LaunchScreen.storyboard */; };
 		04561BDF1C3229E500326192 /* SliderGuideDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04561BDE1C3229E500326192 /* SliderGuideDemoTests.m */; };
 		04561BEA1C3229E500326192 /* SliderGuideDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04561BE91C3229E500326192 /* SliderGuideDemoUITests.m */; };
+		04561C031C32335300326192 /* guide_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 04561C001C32335300326192 /* guide_1.png */; };
+		04561C041C32335300326192 /* guide_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 04561C011C32335300326192 /* guide_2.png */; };
+		04561C051C32335300326192 /* guide_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 04561C021C32335300326192 /* guide_3.png */; };
+		04E740381C324DA200196655 /* ClipImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E740371C324DA200196655 /* ClipImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		04561BE51C3229E500326192 /* SliderGuideDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SliderGuideDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04561BE91C3229E500326192 /* SliderGuideDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SliderGuideDemoUITests.m; sourceTree = "<group>"; };
 		04561BEB1C3229E500326192 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04561C001C32335300326192 /* guide_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guide_1.png; path = Resource/guide_1.png; sourceTree = "<group>"; };
+		04561C011C32335300326192 /* guide_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guide_2.png; path = Resource/guide_2.png; sourceTree = "<group>"; };
+		04561C021C32335300326192 /* guide_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guide_3.png; path = Resource/guide_3.png; sourceTree = "<group>"; };
+		04E740361C324DA200196655 /* ClipImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClipImageView.h; path = ClipImage/ClipImageView.h; sourceTree = "<group>"; };
+		04E740371C324DA200196655 /* ClipImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClipImageView.m; path = ClipImage/ClipImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +110,8 @@
 		04561BC31C3229E500326192 /* SliderGuideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				04561BFF1C32334500326192 /* Resource */,
+				04561BFE1C32331E00326192 /* ClipImage */,
 				04561BC71C3229E500326192 /* AppDelegate.h */,
 				04561BC81C3229E500326192 /* AppDelegate.m */,
 				04561BCA1C3229E500326192 /* ViewController.h */,
@@ -138,6 +149,25 @@
 				04561BEB1C3229E500326192 /* Info.plist */,
 			);
 			path = SliderGuideDemoUITests;
+			sourceTree = "<group>";
+		};
+		04561BFE1C32331E00326192 /* ClipImage */ = {
+			isa = PBXGroup;
+			children = (
+				04E740361C324DA200196655 /* ClipImageView.h */,
+				04E740371C324DA200196655 /* ClipImageView.m */,
+			);
+			name = ClipImage;
+			sourceTree = "<group>";
+		};
+		04561BFF1C32334500326192 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				04561C001C32335300326192 /* guide_1.png */,
+				04561C011C32335300326192 /* guide_2.png */,
+				04561C021C32335300326192 /* guide_3.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +273,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04561C051C32335300326192 /* guide_3.png in Resources */,
+				04561C031C32335300326192 /* guide_1.png in Resources */,
+				04561C041C32335300326192 /* guide_2.png in Resources */,
 				04561BD41C3229E500326192 /* LaunchScreen.storyboard in Resources */,
 				04561BD11C3229E500326192 /* Assets.xcassets in Resources */,
 				04561BCF1C3229E500326192 /* Main.storyboard in Resources */,
@@ -270,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E740381C324DA200196655 /* ClipImageView.m in Sources */,
 				04561BCC1C3229E500326192 /* ViewController.m in Sources */,
 				04561BC91C3229E500326192 /* AppDelegate.m in Sources */,
 				04561BC61C3229E500326192 /* main.m in Sources */,
@@ -412,6 +446,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SliderGuideDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhanglei.SliderGuideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SliderGuideDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zhanglei.SliderGuideDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +532,7 @@
 				04561BF01C3229E500326192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04561BF11C3229E500326192 /* Build configuration list for PBXNativeTarget "SliderGuideDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +541,7 @@
 				04561BF31C3229E500326192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04561BF41C3229E500326192 /* Build configuration list for PBXNativeTarget "SliderGuideDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +550,7 @@
 				04561BF61C3229E500326192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
